@@ -31,6 +31,10 @@ export const skills = {
             title: 'Firebase',
             logo: 'https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png'
         },
+        {
+            title: 'mongoDB',
+            logo: 'https://www.pngrepo.com/png/331488/512/mongodb.png'
+        },
 
     ],
     framework: [
@@ -40,15 +44,20 @@ export const skills = {
         },
         {
             title: 'React Native',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'
+            logo: 'https://img.freepik.com/free-icon/android_318-674214.jpg?w=2000'
+        },
+        {
+            title: 'Node.Js / Express.js',
+            logo: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png'
         },
         {
             title: 'Redux',
-            logo: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png'
+            logo: 'https://cdn.worldvectorlogo.com/logos/redux.svg'
         },
         {
-            title: 'MaterialUI',
-            logo: 'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png'
+            title: 'Tailwind CSS',
+            // logo: 'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png'
+            logo: 'https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png'
         },
     ]
 }
@@ -78,6 +87,22 @@ export const projects = {
             sourcecode: '',
             livelink: '',
             teckstack: ["React", "React Native", "Node.js"]
+        },
+        {
+            image: 'https://static.vecteezy.com/system/resources/thumbnails/012/494/550/small/inventory-control-system-concept-professional-manager-and-worker-are-checking-goods-and-stock-supply-inventory-management-with-goods-demand-vector.jpg',
+            title: 'INVENTORY MANAGEMENT SYSTEM',
+            description: 'Inventory management system, able to perform CRUD operation to manage stocks',
+            sourcecode: 'https://docs.google.com/document/d/1GIpTldeZ7guKhRI6tvyfHzi7PbA8Mx-qteum3VdiB8U/edit?usp=sharing',
+            livelink: 'https://myinventorysys.netlify.app/',
+            teckstack: ["ReactJs", "Node.js", "mongoDB", "ExpressJs"]
+        },
+        {
+            image: 'https://res-2.cloudinary.com/under-the-hood-learning/image/upload/q_auto/v1/blog_images/MVC-Vanilla-JS.png',
+            title: 'VANILLA JS PROJECTS',
+            description: 'Few project (Rock Paper Scissors, Tip calculator, Color Flipper) that is built using vanilla js ( i.e: without any javascript framework)',
+            sourcecode: 'https://github.com/piyush362/Basic-JavaScript-Projects',
+            livelink: 'https://piyush362.github.io/Basic-JavaScript-Projects/',
+            teckstack: ["JavaScript"]
         },
     ],
     uiProject: [

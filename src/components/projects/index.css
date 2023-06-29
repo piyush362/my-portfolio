@@ -38,10 +38,10 @@
     border-radius: 20px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     cursor: pointer;
-    background-color: #ffffff2d;
+    background-color: #09a9d257;
 }
 .projectcard:hover{
-    background-color: #ffffff57;
+    background-color: #09aad298;
 }
 .projectcard img{
     border-radius: 20px 20px 0 0;
@@ -53,12 +53,12 @@
     padding: 10px 15px;
 }
 .details-pc > h1{
-    font-size: 20px;
+    font-size: 16px;
     padding:  3px 0;
 }
 .details-pc > p{
-    font-size: 16px;
-    color: gray;
+    font-size: 13px;
+    color: rgb(223, 213, 213);
 }
 .teckstack{
     display: flex;
@@ -67,9 +67,9 @@
     padding: 5px 15px;
 }
 .teckstack > p{
-    color: rgba(128, 128, 128, 0.858);
+    color: rgba(191, 185, 185, 0.858);
     font-size: 14px;
-    border: 1px solid rgba(128, 128, 128, 0.402);
+    border: 1px solid rgba(205, 201, 201, 0.402);
     padding: 3px 7px;
     border-radius: 10px;
 }

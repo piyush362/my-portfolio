@@ -11,8 +11,8 @@ const Skills = () => {
       </div>
       <div className="skillslowwer">
         <SkillsCard data={skills.languages} heading={"LANGUAGES"} />
-        <SkillsCard data={skills.tools} heading={"TOOLS"} />
-        <SkillsCard data={skills.framework} heading={"FRAMEWORK"} />
+        <SkillsCard data={skills.tools} heading={"TOOLS / DATABASE"} />
+        <SkillsCard data={skills.framework} heading={"FRAMEWORK / LIBRARY"} />
       </div>
     </div>
   );
