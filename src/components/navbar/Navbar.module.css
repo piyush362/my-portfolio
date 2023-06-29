@@ -1,0 +1,23 @@
+.navcontainer{
+    padding: 10px 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.navbarContainer{
+    background-color: rgba(48, 183, 220, 0.797);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    color: white;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    margin: 0 40px;
+    padding: 15px ;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.navbarContainer > a{
+    text-decoration: none;
+    color: white;
+}

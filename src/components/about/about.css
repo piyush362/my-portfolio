@@ -1,0 +1,21 @@
+.aboutcontainer{
+    background-color: rgba(42, 118, 180, 0.541);
+    color:#fff;
+    padding: 60px 0;
+}
+.partrightAbout{
+
+}
+.partrightAbout > p{
+    font-size: 20px;
+}
+.partrightAbout > a{
+    background-color: aqua;
+    padding: 10px 40px;
+    border-radius: 10px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;
+}

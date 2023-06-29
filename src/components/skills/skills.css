@@ -1,0 +1,74 @@
+.skillscontainer{
+    margin: 30px 100px;
+    padding: 70px 0 50px 0;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.221); */
+    color: #fff;
+}
+.skillslowwer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skillContainerCard{
+    /* background: rgba( 0, 175, 238, 0.55 ); */
+    background-color: rgba(42, 118, 180, 0.541);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    margin: 10px;
+    padding: 30px 10px;
+    width: 250px;
+    border-radius: 20px;
+}
+.skill-heading{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.partition{
+    width: 40%;
+    height: 3px;
+    background-color: rgb(82, 181, 223);
+    margin-bottom: 25px;
+}
+.skill-name{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 5px 0;
+}
+.skill-name p{
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.skills-logo{
+    width: 25px;
+}
+.skillcontent{
+    padding: 10px 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .skillContainerCard{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .skillcontent{
+        padding-left: 30px;
+
+    }
+  }

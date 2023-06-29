@@ -1,0 +1,19 @@
+.edu-container{
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(58, 189, 209, 0.377);
+}
+.cousework-c{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cw-title{
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.838);
+}
+.cousework-c > h5{
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.838);
+}
