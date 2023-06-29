@@ -15,13 +15,13 @@ const ProjectCard = ({ data }) => {
       </div>
 
       <div className="btn-pc">
-        <a href="#" target="_blank">
+        <a href="https://github.com/piyush362" target="_blank" rel="noreferrer">
           LIVE
         </a>
-        <a href="#" target="_blank">
+        <a href="https://github.com/piyush362" target="_blank" rel="noreferrer">
           DEMO VIDEO
         </a>
-        <a href="#" target="_blank">
+        <a href="https://github.com/piyush362" target="_blank" rel="noreferrer">
           SOURCE CODE
         </a>
       </div>

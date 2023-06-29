@@ -21,7 +21,11 @@ const About = () => {
             500+ problems on various coding platforms like Leetcode, GFG and
             Hackerrank
           </p>
-          <a href="#" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1lTa8HphTG5wA67DZGpQ3iFegiMJ9Jt19/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
             Download Resume
           </a>
         </div>

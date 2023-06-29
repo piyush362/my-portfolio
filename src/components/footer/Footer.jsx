@@ -6,13 +6,25 @@ const Footer = () => {
       <h2>वो जन्नत ही क्या ? जो एक पल में मिल जाए । </h2>
       <div className="footeritem">
         <div className="footerlink">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/piyushsagar362/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <p>LINKEDIN</p>
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/piyush362"
+            target="_blank"
+            rel="noreferrer"
+          >
             <p>GITHUB</p>
           </a>
-          <a href="#">
+          <a
+            href="https://piyushsagar.hashnode.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <p>HASHNODE</p>
           </a>
         </div>
