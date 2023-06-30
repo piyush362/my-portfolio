@@ -97,6 +97,13 @@ export const projects = {
             teckstack: ["ReactJs", "Node.js", "mongoDB", "ExpressJs"]
         },
         {
+            image: 'https://img.freepik.com/free-vector/realistic-horizontal-cinema-movie-time-poster-with-3d-glasses-snacks-tickets-clapper-reel-blue-background-with-bokeh-vector-illustration_1284-77013.jpg',
+            title: 'MOVIE WORLD- Movies searcch',
+            description: 'A simple React Page that fetch movies details from API and show it on card, users can search movies too.',
+            sourcecode: 'https://github.com/piyush362/movie-search',
+            teckstack: ["ReactJs", "REST API", "Axios"]
+        },
+        {
             image: 'https://res-2.cloudinary.com/under-the-hood-learning/image/upload/q_auto/v1/blog_images/MVC-Vanilla-JS.png',
             title: 'VANILLA JS PROJECTS',
             description: 'Few project (Rock Paper Scissors, Tip calculator, Color Flipper) that is built using vanilla js ( i.e: without any javascript framework)',
