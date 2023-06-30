@@ -101,6 +101,7 @@
     .projectContainer{
         margin: 20px 0;
         padding: 20px;
+        padding-top: 45px;
         align-items: center;
         text-align: center;
     }

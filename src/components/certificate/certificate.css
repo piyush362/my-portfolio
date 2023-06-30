@@ -39,6 +39,7 @@
     .cerContainer{
         margin: 0;
         padding: 25px 0;
+        padding-top: 45px;
         display: flex;
         flex-direction: column;
         align-items: center;
