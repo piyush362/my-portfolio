@@ -37,3 +37,10 @@
 .footerlink > a:hover{
     color: #fff;
 }
+
+@media screen and (max-width: 800px) {
+    .footer-container{
+        padding: 50px 20px;
+        text-align: center;
+    }
+}

@@ -3,11 +3,9 @@
     color:#fff;
     padding: 60px 0;
 }
-.partrightAbout{
-
-}
 .partrightAbout > p{
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 30px;
 }
 .partrightAbout > a{
     background-color: aqua;
@@ -15,7 +13,25 @@
     border-radius: 10px;
     float: right;
     text-decoration: none;
-    color: white;
+    color: rgb(33, 32, 39);
     font-size: 18px;
+    font-weight: bolder;
     margin-top: 50px;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .aboutcontainer{
+        padding: 20px 0;
+    }
+    .partrightAbout >p{
+        line-height: 20px;
+        text-align: justify;
+    }
+    .partrightAbout > a{
+        font-size: 15px;
+        padding: 7px 30px;
+    }
 }

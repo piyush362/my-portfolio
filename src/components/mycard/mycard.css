@@ -9,7 +9,6 @@
 }
 .myPersonalCard {
     background: rgba(48, 183, 220, 0.797);
-    /* background-color: rgba(42, 118, 180, 0.541); */
     color: #fff;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
@@ -147,6 +146,7 @@
 @media screen and (max-width: 800px) {
     .myPersonalCard{
         flex-direction: column-reverse;
+        height: 500px;
     }
     .title > h1{
         font-size: 2rem;

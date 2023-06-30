@@ -14,8 +14,8 @@ const Eduction = () => {
           <h4 className="cw-title">CourseWork.</h4>
           <div className="cousework-c">
             <h5>Data Structure & Algorithm</h5>
-            <h5>Operating system</h5>
-            <h5>Database management system</h5>
+            <h5>Operating System</h5>
+            <h5>Database Management System</h5>
             <h5>Object Oriented Technique</h5>
             <h5>Computer Networking</h5>
           </div>

@@ -11,10 +11,10 @@ const About = () => {
         <div className="partrightAbout">
           <p>
             Hello, My name is Piyush Sagar Currently in 6th semester, pursuing
-            btech in Information technology from dr. ram manohar lohia avadh
-            university, my skills includes a decent foundation in C++ and
-            javascript from development perpective, i have done many project in
-            react and node for both mobile and web For computer science
+            B.Tech in Information technology from Dr. Ram Manohar Lohia Avadh
+            University, My skills includes a decent foundation in C++ and
+            JavasSript from development perpective, I have done many project in
+            React and Node for both Mobile and Web, For computer science
             fundamentals, I have a decent knowledge about Data Structure &
             Algorithm, Operating system, Database management system and Object
             Oriented Technique. I have also practiced coding by solving over

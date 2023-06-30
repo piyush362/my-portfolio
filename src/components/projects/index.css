@@ -39,6 +39,9 @@
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     cursor: pointer;
     background-color: #09a9d257;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .projectcard:hover{
     background-color: #09aad298;
@@ -67,20 +70,21 @@
     padding: 5px 15px;
 }
 .teckstack > p{
-    color: rgba(191, 185, 185, 0.858);
+    color: rgba(191, 185, 185, 0.92);
     font-size: 14px;
-    border: 1px solid rgba(205, 201, 201, 0.402);
+    border: 1px solid rgba(231, 228, 228, 0.402);
     padding: 3px 7px;
     border-radius: 10px;
 }
 .btn-pc{
     padding: 10px 15px 20px 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     text-decoration: none;
 }
 .btn-pc > a{
+    width: 45%;
     text-decoration: none;
     color: black;
     background-color: aqua;
@@ -89,5 +93,25 @@
     border-radius: 10px;
 }
 .btn-pc > a:hover{
-    background-color: rgb(23, 192, 192);
+    background-color: rgb(117, 255, 255);
+}
+
+
+@media screen and (max-width: 800px) {
+    .projectContainer{
+        margin: 20px 0;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .pc-head > h1{
+        font-size: 18px;
+    }
+    .projectlist{
+        justify-content: center;
+        gap: 15px;
+    }
+    .projectcard{
+        width: 100%;
+    }
 }

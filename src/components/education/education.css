@@ -17,3 +17,17 @@
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.838);
 }
+
+@media screen and (max-width: 900px){
+    .edu-container{
+        padding: 20px 0;
+    }
+    .cousework-c{
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .cousework-c h5{
+        font-size: 12px;
+        padding: 7px 13px;
+    }
+}

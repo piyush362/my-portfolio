@@ -2,10 +2,8 @@
     margin: 30px 100px;
     padding: 70px 0 50px 0;
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
     justify-content: space-between;
-    /* border-bottom: 1px solid rgba(128, 128, 128, 0.221); */
     color: #fff;
 }
 .skillslowwer{
@@ -15,7 +13,6 @@
 }
 
 .skillContainerCard{
-    /* background: rgba( 0, 175, 238, 0.55 ); */
     background-color: rgba(42, 118, 180, 0.541);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
@@ -24,14 +21,14 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: black;
     margin: 10px;
-    padding: 30px 10px;
+    padding: 15px 10px;
     width: 250px;
     border-radius: 20px;
 }
 .skill-heading{
     text-transform: uppercase;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bolder;
     margin-bottom: 10px;
 }
@@ -49,7 +46,7 @@
 }
 .skill-name p{
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bolder;
 }
 .skills-logo{
@@ -62,6 +59,12 @@
 
 
 @media screen and (max-width: 800px) {
+    .skillscontainer{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        margin: 20px;
+    }
     .skillContainerCard{
         width: 100%;
         margin: 0;
@@ -70,5 +73,8 @@
     .skillcontent{
         padding-left: 30px;
 
+    }
+    .skillslowwer{
+        gap: 10px;
     }
   }

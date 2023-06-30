@@ -21,3 +21,10 @@
     text-decoration: none;
     color: white;
 }
+
+
+@media screen and (max-width: 800px){
+    .navcontainer{
+        /* display: none; */
+    }
+}
