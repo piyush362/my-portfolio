@@ -144,9 +144,15 @@
 
   
 @media screen and (max-width: 800px) {
+    .mycardContainer{
+      padding: 70px 20px;
+      height: 75vh;
+    }
     .myPersonalCard{
         flex-direction: column-reverse;
         height: 500px;
+        padding: 50px;
+        
     }
     .title > h1{
         font-size: 2rem;
