@@ -101,6 +101,7 @@ export const projects = {
             title: 'MOVIE WORLD- Movies searcch',
             description: 'A simple React Page that fetch movies details from API and show it on card, users can search movies too.',
             sourcecode: 'https://github.com/piyush362/movie-search',
+            livelink: 'https://piyush362.github.io/Basic-JavaScript-Projects/',
             teckstack: ["ReactJs", "REST API", "Axios"]
         },
         {
@@ -108,7 +109,7 @@ export const projects = {
             title: 'VANILLA JS PROJECTS',
             description: 'Few project (Rock Paper Scissors, Tip calculator, Color Flipper) that is built using vanilla js ( i.e: without any javascript framework)',
             sourcecode: 'https://github.com/piyush362/Basic-JavaScript-Projects',
-            livelink: 'https://piyush362.github.io/Basic-JavaScript-Projects/',
+            livelink: 'https://movies-search23.netlify.app/',
             teckstack: ["JavaScript"]
         },
     ],
