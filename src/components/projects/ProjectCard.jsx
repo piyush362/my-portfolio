@@ -18,9 +18,6 @@ const ProjectCard = ({ data }) => {
         <a href={data.livelink} target="_blank" rel="noreferrer">
           LIVE
         </a>
-        {/* <a href="https://github.com/piyush362" target="_blank" rel="noreferrer">
-          DEMO VIDEO
-        </a> */}
         <a href={data.sourcecode} target="_blank" rel="noreferrer">
           SOURCE CODE
         </a>

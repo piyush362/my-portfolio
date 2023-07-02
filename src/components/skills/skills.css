@@ -10,7 +10,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+     /* Add animation properties */
+     animation-name: floating;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+
 }
+/* Define the floating animation */
+@keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 .skillContainerCard{
     background-color: rgba(42, 118, 180, 0.541);
@@ -24,7 +43,12 @@
     padding: 15px 10px;
     width: 250px;
     border-radius: 20px;
+    cursor: pointer;
 }
+.skillContainerCard:hover{
+    background-color: rgba(42, 118, 180, 1);
+}
+
 .skill-heading{
     text-transform: uppercase;
     color: white;
