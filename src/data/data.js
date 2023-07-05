@@ -74,31 +74,31 @@ export const projects = {
         },
         {
             image: 'https://img.freepik.com/free-vector/colorful-icons-set-concept_79603-1267.jpg',
-            title: 'Social Birds',
-            description: 'A social media application ',
+            title: 'Social Birds | Live Site N/A',
+            description: 'A social media Mobile application like twitter where user can post there birds(soo called tweet) and can do CURD operation',
             sourcecode: '',
-            livelink: '',
+            livelink: 'https://github.com/piyush362/page-not-found',
             teckstack: ["React", "React Native", "Node.js"]
         },
         {
             image: 'https://img.freepik.com/premium-vector/comic-speech-bubbles-with-text-quiz-night-neon-icon-symbol-sticker-tag-special-offer-label_100456-7641.jpg',
-            title: 'Quiz Menia',
-            description: '',
+            title: 'Quiz Menia | Live Site N/A',
+            description: 'A Mobile application that display question, fetching from API and user can solve those MCQ question and get real time score',
             sourcecode: '',
-            livelink: '',
+            livelink: 'https://github.com/piyush362/page-not-found',
             teckstack: ["React", "React Native", "Node.js"]
         },
         {
             image: 'https://img.freepik.com/premium-vector/man-with-magnifying-glass-travel-book-tickets-hotel-room-apartment-reservation-service-transfer-transportation-traveling_48369-37531.jpg?w=360',
-            title: 'Make My Booking',
-            description: '',
-            sourcecode: '',
+            title: 'Make My Booking | Live Site N/A',
+            description: 'A simple mobile App in which users can see hotels by location and they can book rooms in hotels',
+            sourcecode: 'https://github.com/piyush362/page-not-found',
             livelink: '',
             teckstack: ["React", "React Native", "Node.js"]
         },
         {
             image: 'https://static.vecteezy.com/system/resources/thumbnails/012/494/550/small/inventory-control-system-concept-professional-manager-and-worker-are-checking-goods-and-stock-supply-inventory-management-with-goods-demand-vector.jpg',
-            title: 'INVENTORY MANAGEMENT SYSTEM',
+            title: 'INVENTORY MANAGEMENT SYSTEM | LIVE site available',
             description: 'Inventory management system, able to perform CRUD operation to manage stocks',
             sourcecode: 'https://docs.google.com/document/d/1GIpTldeZ7guKhRI6tvyfHzi7PbA8Mx-qteum3VdiB8U/edit?usp=sharing',
             livelink: 'https://myinventorysys.netlify.app/',
@@ -106,7 +106,7 @@ export const projects = {
         },
         {
             image: 'https://img.freepik.com/free-vector/realistic-horizontal-cinema-movie-time-poster-with-3d-glasses-snacks-tickets-clapper-reel-blue-background-with-bokeh-vector-illustration_1284-77013.jpg',
-            title: 'MOVIE WORLD- Movies searcch',
+            title: 'MOVIE WORLD- Movies search | LIVE',
             description: 'A simple React Page that fetch movies details from API and show it on card, users can search movies too.',
             sourcecode: 'https://github.com/piyush362/movie-search',
             livelink: 'https://movies-search23.netlify.app/',
@@ -114,7 +114,7 @@ export const projects = {
         },
         {
             image: 'https://res-2.cloudinary.com/under-the-hood-learning/image/upload/q_auto/v1/blog_images/MVC-Vanilla-JS.png',
-            title: 'VANILLA JS PROJECTS',
+            title: 'VANILLA JS PROJECTS | LIVE',
             description: 'Few project (Rock Paper Scissors, Tip calculator, Color Flipper) that is built using vanilla js ( i.e: without any javascript framework)',
             sourcecode: 'https://github.com/piyush362/Basic-JavaScript-Projects',
             livelink: 'https://piyush362.github.io/Basic-JavaScript-Projects/',
