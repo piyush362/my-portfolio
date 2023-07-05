@@ -22,7 +22,7 @@ const About = () => {
             Hackerrank
           </p>
           <a
-            href="https://drive.google.com/file/d/1lTa8HphTG5wA67DZGpQ3iFegiMJ9Jt19/view?usp=sharing"
+            href="https://drive.google.com/file/d/1iyBuxZhmSR-PA-BexExjm2i1WQwtT-0w/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
