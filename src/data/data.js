@@ -65,6 +65,14 @@ export const skills = {
 export const projects = {
     allProject: [
         {
+            image: 'https://res.cloudinary.com/dkr75ykb4/image/upload/v1688570877/Screenshot_2023-07-05_205629_p3bysp.png',
+            title: 'LeetCode Lite ( Under Development )',
+            description: 'A LeetCode Clone website that have auth section to create users and reset password and most important it have real DSA problems which you can solve in this website absolutely like real LeetCode',
+            sourcecode: '',
+            livelink: 'https://leetcodelite.netlify.app/',
+            teckstack: ["React", "FireBase", "Tailwind CSS"]
+        },
+        {
             image: 'https://img.freepik.com/free-vector/colorful-icons-set-concept_79603-1267.jpg',
             title: 'Social Birds',
             description: 'A social media application ',
