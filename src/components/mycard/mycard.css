@@ -35,7 +35,18 @@
       transform: translateY(0);
     }
   }
-  
+  .online-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .online-logo{
+    height: 30px;
+    /* width: 50px; */
+  }
   
   .title > h1 {
     font-size: 5.5em;
