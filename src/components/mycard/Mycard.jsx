@@ -1,8 +1,8 @@
 import "./mycard.css";
 
-const gitLogo = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
-const leetcodeLogo =
-  "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png";
+// const gitLogo = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
+// const leetcodeLogo =
+//   "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png";
 
 const Mycard = () => {
   return (
