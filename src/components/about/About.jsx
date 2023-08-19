@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className="partrightAbout">
           <p>
-            Hello, My name is Piyush Sagar Currently in 6th semester, pursuing
+            {/* Hello, My name is Piyush Sagar Currently in 6th semester, pursuing
             B.Tech in Information technology from Dr. Ram Manohar Lohia Avadh
             University, My skills includes a decent foundation in C++ and
             JavasSript from development perpective, I have done many project in
@@ -19,7 +19,18 @@ const About = () => {
             Algorithm, Operating system, Database management system and Object
             Oriented Technique. I have also practiced coding by solving over
             500+ problems on various coding platforms like Leetcode, GFG and
-            Hackerrank
+            Hackerrank */}
+            Hello, My name is Piyush Sagar Currently in final year, pursuing
+            B.tech in Information technology from Dr. Ram Manohar Lohia Avadh
+            University, My skills includes a decent foundation in C++ and
+            javascript, from development perpective, i have done many project in
+            React and Node (basically MERN ) for both Mobile and Web and as
+            these are nothing but just Javascript, So, I am well Good in
+            JavaScript Ecosystem. For computer science fundamentals, I have a
+            decent knowledge about Data Structure & Algorithm, Operating system,
+            Database management system and Object Oriented Technique. I have
+            also practiced coding by solving over 500+ problems on various
+            coding platforms like Leetcode, GFG and Hackerrank
           </p>
           <a
             href="https://drive.google.com/file/d/1iyBuxZhmSR-PA-BexExjm2i1WQwtT-0w/view?usp=sharing"

@@ -16,7 +16,8 @@ export const skills = {
         {
             title: 'C++',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png'
-        }
+        },
+
     ],
     tools: [
         {
@@ -58,6 +59,11 @@ export const skills = {
             title: 'Tailwind CSS',
             // logo: 'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png'
             logo: 'https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png'
+        },
+        {
+            title: 'NextJS',
+            // logo: 'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png'
+            logo: 'https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail.webp'
         },
     ]
 }
