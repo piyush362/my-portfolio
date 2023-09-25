@@ -33,7 +33,7 @@ const About = () => {
             coding platforms like Leetcode, GFG and Hackerrank
           </p>
           <a
-            href="https://drive.google.com/file/d/1iyBuxZhmSR-PA-BexExjm2i1WQwtT-0w/view?usp=sharing"
+            href="https://drive.google.com/file/d/1yJVxwEG6nNQSUNxRjSYtPsyqLOZ_7bcj/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
