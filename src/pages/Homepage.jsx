@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import MyCard from "../components/mycard/Mycard";
-// import About from "../components/about/About";
+import About from "../components/about/About";
 import Eduction from "../components/education/Eduction";
 import Skills from "../components/skills/Skills";
 import Project from "../components/projects/Project";
@@ -14,7 +14,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <MyCard />
-      {/* <About /> */}
+      <About />
       <Experience />
       <Eduction />
       <Skills />

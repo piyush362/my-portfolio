@@ -1,5 +1,5 @@
 .aboutcontainer{
-    background-color: rgba(42, 118, 180, 0.541);
+    background-color: rgba(27, 66, 66, 0.541);
     color:#fff;
     padding: 60px 0;
 }
@@ -8,7 +8,7 @@
     line-height: 30px;
 }
 .partrightAbout > a{
-    background-color: aqua;
+    background-color: #9EC8B9;
     padding: 10px 40px;
     border-radius: 10px;
     float: right;

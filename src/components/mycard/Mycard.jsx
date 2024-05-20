@@ -3,7 +3,7 @@ import "./mycard.css";
 const MyCard = () => {
   return (
     <div id="home" className="mycardContainer">
-      <div class="wrapper">
+      {/* <div class="wrapper">
         <span></span>
         <span></span>
         <span></span>
@@ -14,7 +14,7 @@ const MyCard = () => {
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> */}
 
       <div className="myPersonalCard">
         <div className="title">

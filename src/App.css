@@ -5,6 +5,7 @@ html {
 .App{
     margin: 0;
     padding: 0;
+    background-color: #092635;
 }
 *{
     margin: 0;
@@ -41,6 +42,11 @@ html {
 .partright > h3{
     color: rgba(224, 224, 224, 0.747);
     font: italic;
+}
+
+.span_highlight_text {
+    font-weight: bold;
+    color: aqua;
 }
 
 @media screen and (max-width: 900px){
