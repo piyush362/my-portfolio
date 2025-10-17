@@ -1,9 +1,10 @@
-import React from "react";
+import { Routes, Route } from "react-router";
+import Homepage from "./pages/Homepage";
 
 export default function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline bg-amber-300">Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+    </Routes>
   );
 }
