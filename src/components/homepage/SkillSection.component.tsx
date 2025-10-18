@@ -92,7 +92,7 @@ const SkillSection: React.FC = () => {
               className="bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6 hover:shadow-xl border border-blue-100 hover:border-blue-200 transition-all duration-300"
             >
               {/* Card Header */}
-              <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+              <div className="flex items-center justify-start md:justify-start gap-3 mb-4">
                 <div className="p-2 rounded-full bg-gradient-to-r from-blue-700 to-sky-400 text-white shadow-md">
                   <category.icon size={24} />
                 </div>
@@ -115,7 +115,7 @@ const SkillSection: React.FC = () => {
               </ul> */}
 
               {/* Skills as Elegant Chips */}
-              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+              <div className="flex flex-wrap justify-start md:justify-start gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
