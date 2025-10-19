@@ -1,5 +1,7 @@
 import { FaApple, FaGlobe, FaGooglePlay } from "react-icons/fa";
 import type { Project } from "../../data/projectsData";
+import { useNavigate } from "react-router";
+import { ArrowRight } from "lucide-react";
 
 interface ProjectShowcaseProps {
   project: Project;
@@ -8,22 +10,23 @@ interface ProjectShowcaseProps {
 export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
   project,
 }) => {
+  const navigate = useNavigate();
+
+  const handleViewMore = () => {
+    navigate(`/projectDetails/${project.id}`);
+  };
+
   return (
     <div className="bg-white/80 backdrop-blur-md border-l-4 border-blue-400 rounded-2xl shadow-md p-6 flex flex-col h-full hover:shadow-lg transition-all duration-300">
       {/* Header: Logo + Title + Official Website */}
       <div className="flex items-center gap-4 mb-4">
-        {/* Project Logo with shadow */}
         <img
           src={project.projectLogo}
           alt={project.title}
           className="w-20 h-20 object-contain rounded-xl shadow-lg"
         />
-
         <div className="flex flex-col">
-          {/* Project Title */}
           <h3 className="text-2xl font-bold text-blue-900">{project.title}</h3>
-
-          {/* Official Website Link */}
           {project.officialWebsite && (
             <a
               href={project.officialWebsite}
@@ -79,7 +82,6 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
                 className="flex flex-col md:flex-row md:items-center gap-3 bg-blue-50/70 rounded-lg p-2"
               >
                 <span className="font-medium text-blue-900">{app.name}</span>
-                {/* App Links */}
                 <div className="flex flex-wrap gap-2">
                   {app.isPlayStore && app.playStoreLink && (
                     <a
@@ -117,6 +119,16 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
           </div>
         </div>
       )}
+
+      {/* View More Info Link */}
+      <div className="mt-4 flex justify-end">
+        <span
+          onClick={handleViewMore}
+          className="flex items-center gap-1 text-blue-600 hover:underline cursor-pointer text-sm font-medium"
+        >
+          View More Info <ArrowRight size={16} />
+        </span>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,17 @@
 import mettseniaLogo from "../assets/mettsenia.png";
 import stapplesLogo from "../assets/stapples.png";
 
+// mettsCredit image
+import mettsCredit1 from "../assets/mettsCredit/mettsCredit1.png";
+import mettsCredit2 from "../assets/mettsCredit/mettsCredit2.png";
+import mettsCredit3 from "../assets/mettsCredit/mettsCredit3.png";
+import mettsCredit4 from "../assets/mettsCredit/mettsCredit4.png";
+import mettsCredit5 from "../assets/mettsCredit/mettsCredit5.png";
+import mettsCredit6 from "../assets/mettsCredit/mettsCredit6.png";
+import mettsCredit7 from "../assets/mettsCredit/mettsCredit7.png";
+import mettsCredit8 from "../assets/mettsCredit/mettsCredit8.png";
+import mettsCredit9 from "../assets/mettsCredit/mettsCredit9.png";
+
 export interface ProjectFeature {
   id: number;
   description: string;
@@ -15,6 +26,7 @@ export interface ProjectApp {
   playStoreLink?: string | null;
   appStoreLink?: string | null;
   webAppLink?: string | null;
+  shoCaseImages?: string[];
 }
 
 export interface Project {
@@ -63,6 +75,17 @@ export const projectsData: Project[] = [
         playStoreLink:
           "https://play.google.com/store/apps/details?id=com.mettsenia.owner&hl=en",
         appStoreLink: "https://apps.apple.com/us/app/mettscredit/id6742732876",
+        shoCaseImages: [
+          mettsCredit1,
+          mettsCredit2,
+          mettsCredit3,
+          mettsCredit4,
+          mettsCredit5,
+          mettsCredit6,
+          mettsCredit7,
+          mettsCredit8,
+          mettsCredit9,
+        ],
       },
       {
         id: 2,
@@ -73,6 +96,17 @@ export const projectsData: Project[] = [
         playStoreLink:
           "https://play.google.com/store/apps/details?id=com.metsensia.tenant&hl=en",
         appStoreLink: "https://apps.apple.com/us/app/id6742181606",
+        shoCaseImages: [
+          mettsCredit1,
+          mettsCredit2,
+          mettsCredit3,
+          mettsCredit4,
+          mettsCredit5,
+          mettsCredit6,
+          mettsCredit7,
+          mettsCredit8,
+          mettsCredit9,
+        ],
       },
     ],
   },
