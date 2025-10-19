@@ -21,6 +21,7 @@ export interface Project {
   id: number;
   title: string;
   projectLogo?: string;
+  officialWebsite?: string;
   subTitle: string;
   keyFeatures: ProjectFeature[];
   projectApps: ProjectApp[];
@@ -31,6 +32,7 @@ export const projectsData: Project[] = [
     id: 1,
     title: "Mettsenia",
     projectLogo: mettseniaLogo,
+    officialWebsite: "https://mettsenia.com",
     subTitle:
       "IoT-based property management platform enabling users to monitor, control, and analyze energy and water consumption across smart devices with real-time dashboards and Bluetooth-enabled controls.",
     keyFeatures: [
@@ -44,7 +46,13 @@ export const projectsData: Project[] = [
         description:
           "Offline Bluetooth connectivity for on/off control and recharge management of IoT devices.",
       },
+      {
+        id: 3,
+        description:
+          "Managed via the MettsCredit app for property owners and MettsPe app for tenants, allowing seamless property and device management.",
+      },
     ],
+
     projectApps: [
       {
         id: 1,
@@ -72,6 +80,7 @@ export const projectsData: Project[] = [
     id: 2,
     title: "Stapples",
     projectLogo: stapplesLogo,
+    officialWebsite: "https://www.stapples.in",
     subTitle:
       "Cross-platform smart printing ecosystem that allows users to upload, manage, and print documents via mobile, web, or kiosk integration with secure payments and real-time sync.",
     keyFeatures: [

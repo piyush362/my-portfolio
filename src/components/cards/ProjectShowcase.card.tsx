@@ -10,7 +10,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
 }) => {
   return (
     <div className="bg-white/80 backdrop-blur-md border-l-4 border-blue-400 rounded-2xl shadow-md p-6 flex flex-col h-full hover:shadow-lg transition-all duration-300">
-      {/* Header: Logo + Title */}
+      {/* Header: Logo + Title + Official Website */}
       <div className="flex items-center gap-4 mb-4">
         {/* Project Logo with shadow */}
         <img
@@ -19,8 +19,22 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
           className="w-20 h-20 object-contain rounded-xl shadow-lg"
         />
 
-        {/* Project Title */}
-        <h3 className="text-2xl font-bold text-blue-900">{project.title}</h3>
+        <div className="flex flex-col">
+          {/* Project Title */}
+          <h3 className="text-2xl font-bold text-blue-900">{project.title}</h3>
+
+          {/* Official Website Link */}
+          {project.officialWebsite && (
+            <a
+              href={project.officialWebsite}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-blue-600 hover:underline mt-1"
+            >
+              Official Website
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Project Subtitle */}
@@ -43,7 +57,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
               key={feature.id}
               dangerouslySetInnerHTML={{
                 __html: feature.description.replace(
-                  /(real-time|interactive|Bluetooth|offline|QR code|energy|water)/gi,
+                  /(real-time|interactive|Bluetooth|offline|QR code|energy|water|MettsCredit|MettsPe)/gi,
                   "<span class='font-semibold text-blue-700'>$1</span>"
                 ),
               }}

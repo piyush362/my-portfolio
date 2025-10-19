@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// https://drive.google.com/file/d/1zirR7yMd3OX-X30V_4LLLyFdczoG3RRg/view?usp=drive_link
+
 const HeroSection: React.FC = () => {
   return (
     <section
@@ -70,17 +72,30 @@ const HeroSection: React.FC = () => {
         transition={{ delay: 0.9, duration: 0.6 }}
         className="flex flex-col md:flex-row gap-5 z-10"
       >
+        {/* View Projects */}
         <a
           href="#projects"
           className="px-8 py-3 bg-blue-800 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
         >
           🚀 View Projects
         </a>
+
+        {/* Contact Me */}
         <a
           href="#contact"
           className="px-8 py-3 border-2 border-blue-800 text-blue-800 font-semibold rounded-xl shadow-lg hover:bg-blue-800 hover:text-white hover:shadow-xl transition-all duration-300"
         >
           📩 Contact Me
+        </a>
+
+        {/* View & Download Resume */}
+        <a
+          href="https://drive.google.com/file/d/1zirR7yMd3OX-X30V_4LLLyFdczoG3RRg/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-blue-800 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
+        >
+          📃 View Resume
         </a>
       </motion.div>
 
