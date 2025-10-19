@@ -1,3 +1,6 @@
+import mettseniaLogo from "../assets/mettsenia.png";
+import stapplesLogo from "../assets/stapples.png";
+
 export interface ProjectFeature {
   id: number;
   description: string;
@@ -17,6 +20,7 @@ export interface ProjectApp {
 export interface Project {
   id: number;
   title: string;
+  projectLogo?: string;
   subTitle: string;
   keyFeatures: ProjectFeature[];
   projectApps: ProjectApp[];
@@ -26,6 +30,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     title: "Mettsenia",
+    projectLogo: mettseniaLogo,
     subTitle:
       "IoT-based property management platform enabling users to monitor, control, and analyze energy and water consumption across smart devices with real-time dashboards and Bluetooth-enabled controls.",
     keyFeatures: [
@@ -66,6 +71,7 @@ export const projectsData: Project[] = [
   {
     id: 2,
     title: "Stapples",
+    projectLogo: stapplesLogo,
     subTitle:
       "Cross-platform smart printing ecosystem that allows users to upload, manage, and print documents via mobile, web, or kiosk integration with secure payments and real-time sync.",
     keyFeatures: [
