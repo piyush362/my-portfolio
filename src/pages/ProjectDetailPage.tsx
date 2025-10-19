@@ -193,6 +193,55 @@ export default function ProjectDetailPage() {
           </div>
         </motion.div>
       )}
+
+      {/* Associated Description / Disclaimer */}
+      {project.associatedDescription && (
+        <motion.div
+          className="max-w-3xl mx-auto mb-12 p-4 bg-white/80 backdrop-blur-md rounded-lg border-l-4 border-blue-500 shadow-sm"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          {/* Main Description */}
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            {project.associatedDescription.split(" ").map((word, idx) => {
+              const keywords = [
+                "developer",
+                "features",
+                "frontend",
+                "deployment",
+                "Play",
+                "App",
+                "app",
+                "project",
+                "Srchout",
+                "Software",
+                "Store",
+                "web",
+              ];
+              const cleanWord = word.replace(/[^a-zA-Z0-9]/g, "");
+              if (keywords.includes(cleanWord)) {
+                return (
+                  <span key={idx} className="font-semibold text-blue-700">
+                    {word}{" "}
+                  </span>
+                );
+              }
+              return word + " ";
+            })}
+          </p>
+
+          {/* Disclaimer / Advisory */}
+          <p className="mt-4 italic text-gray-600">
+            ⚠️ I do not have any personal ownership over this app. This is
+            purely a showcase of my work to demonstrate my{" "}
+            <span className="font-semibold text-blue-700">skills</span> and
+            contribution as a{" "}
+            <span className="font-semibold text-blue-700">developer</span> on
+            this <span className="font-semibold text-blue-700">project</span>.
+          </p>
+        </motion.div>
+      )}
     </section>
   );
 }

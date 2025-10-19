@@ -12,6 +12,15 @@ import mettsCredit7 from "../assets/mettsCredit/mettsCredit7.png";
 import mettsCredit8 from "../assets/mettsCredit/mettsCredit8.png";
 import mettsCredit9 from "../assets/mettsCredit/mettsCredit9.png";
 
+// stapple images
+import stapples1 from "../assets/stapples/stapples1.png";
+import stapples2 from "../assets/stapples/stapples2.png";
+import stapples3 from "../assets/stapples/stapples3.png";
+import stapples4 from "../assets/stapples/stapples4.png";
+import stapples5 from "../assets/stapples/stapples5.png";
+import stapples6 from "../assets/stapples/stapples6.png";
+import stapples7 from "../assets/stapples/stapples7.png";
+
 export interface ProjectFeature {
   id: number;
   description: string;
@@ -37,6 +46,7 @@ export interface Project {
   subTitle: string;
   keyFeatures: ProjectFeature[];
   projectApps: ProjectApp[];
+  associatedDescription?: string;
 }
 
 export const projectsData: Project[] = [
@@ -109,6 +119,8 @@ export const projectsData: Project[] = [
         ],
       },
     ],
+    associatedDescription:
+      "This project was developed as part of my work at Srchout Software. I contributed to implementing most of the front-end features and managed the deployment of the apps to both the Play Store and the App Store.",
   },
   {
     id: 2,
@@ -140,7 +152,18 @@ export const projectsData: Project[] = [
           "https://play.google.com/store/apps/details?id=com.kiosk_user&hl=en",
         appStoreLink: "https://apps.apple.com/in/app/stapples/id6752280756/",
         webAppLink: "https://www.stapples.in",
+        shoCaseImages: [
+          stapples1,
+          stapples2,
+          stapples3,
+          stapples4,
+          stapples5,
+          stapples6,
+          stapples7,
+        ],
       },
     ],
+    associatedDescription:
+      "This project was developed as part of my work at Srchout Software. I contributed to implementing most of the front-end features and managed the deployment of the apps to both the Play Store, App Store and web App.",
   },
 ];
