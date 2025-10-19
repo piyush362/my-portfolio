@@ -2,9 +2,14 @@ import { projectsData, type Project } from "../data/projectsData";
 import { FaApple, FaGlobe, FaGooglePlay } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useParams } from "react-router";
+import { useEffect } from "react";
 
 export default function ProjectDetailPage() {
   const { projectId } = useParams<{ projectId: string }>();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []); // scrolls to top on component mount
 
   const project: Project | undefined = projectsData.find(
     (p) => p.id.toString() === projectId
@@ -102,7 +107,6 @@ export default function ProjectDetailPage() {
         </ul>
       </motion.div>
 
-      {/* Project Apps / Platforms */}
       {/* Project Apps / Platforms */}
       {project.projectApps.length > 0 && (
         <motion.div
