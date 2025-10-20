@@ -182,7 +182,7 @@ export default function ProjectDetailPage() {
                         className="w-60 h-auto object-contain rounded-xl shadow-lg flex-shrink-0"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.1 * idx }} // faster animation
+                        // transition={{ duration: 0.1, delay: 0.1 }} // faster animation
                         loading="lazy" // reduce latency
                       />
                     ))}
