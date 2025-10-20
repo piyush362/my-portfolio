@@ -1,6 +1,7 @@
 // src/components/homepage/HeroSection.component.tsx
 import React from "react";
 import { motion } from "framer-motion";
+import { RESUME_DRIVE_LINK } from "../../data/profileData";
 
 // https://drive.google.com/file/d/1zirR7yMd3OX-X30V_4LLLyFdczoG3RRg/view?usp=drive_link
 
@@ -90,7 +91,7 @@ const HeroSection: React.FC = () => {
 
         {/* View & Download Resume */}
         <a
-          href="https://drive.google.com/file/d/1zirR7yMd3OX-X30V_4LLLyFdczoG3RRg/view?usp=drive_link"
+          href={RESUME_DRIVE_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="px-8 py-3 bg-blue-800 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
