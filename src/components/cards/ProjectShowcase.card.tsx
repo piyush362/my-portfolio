@@ -124,7 +124,8 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
       <div className="mt-4 flex justify-end">
         <span
           onClick={handleViewMore}
-          className="flex items-center gap-1 text-blue-600 hover:underline cursor-pointer text-sm font-medium"
+          className="flex items-center gap-1 text-blue-600 hover:underline cursor-pointer text-sm font-medium select-none touch-none"
+          style={{ WebkitTapHighlightColor: "transparent" }}
         >
           View More Info <ArrowRight size={16} />
         </span>
