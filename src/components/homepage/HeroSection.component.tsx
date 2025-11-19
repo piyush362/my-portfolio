@@ -34,6 +34,18 @@ const HeroSection: React.FC = () => {
         className="text-lg md:text-2xl font-medium text-gray-700 mb-4 tracking-wide"
       >
         <span className="text-blue-700 font-semibold">
+         Software Engineer
+        </span>
+      </motion.p>
+
+      
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        className="text-lg md:text-2xl font-medium text-gray-700 mb-4 tracking-wide"
+      >
+        <span className="text-blue-700 font-semibold">
           Mobile Application Developer
         </span>{" "}
         |{" "}
