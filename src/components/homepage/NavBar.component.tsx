@@ -10,6 +10,7 @@ import {
   GraduationCap,
   Folder,
   Mail,
+  Terminal
 } from "lucide-react";
 
 const NavBar: React.FC = () => {
@@ -22,8 +23,8 @@ const NavBar: React.FC = () => {
     { name: "Home", href: "#hero", icon: Home },
     { name: "About", href: "#about", icon: User },
     { name: "Skills", href: "#skills", icon: Code },
-    { name: "Experience", href: "#experience", icon: Briefcase },
-    { name: "Education", href: "#education", icon: GraduationCap },
+    { name: "Exp", href: "#experience", icon: Briefcase }, // Shortened for retro feel
+    { name: "Edu", href: "#education", icon: GraduationCap }, // Shortened
     { name: "Projects", href: "#projects", icon: Folder },
     { name: "Contact", href: "#contact", icon: Mail },
   ];
@@ -36,66 +37,84 @@ const NavBar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-300 font-mono border-b-4 border-black ${
         scrolled
-          ? "bg-white/70 backdrop-blur-xl shadow-md"
-          : "bg-white/40 backdrop-blur-lg"
+          ? "bg-[#f4f3ef] shadow-[0px_6px_0px_0px_rgba(0,0,0,1)] py-2"
+          : "bg-[#f4f3ef] py-4"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        {/* Logo / Name */}
-        <div className="text-2xl font-bold text-blue-900 cursor-pointer">
-          Piyush Sagar
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        
+        {/* Logo / System Name */}
+        <div className="flex items-center gap-2">
+            <div className="bg-black text-white p-1">
+                <Terminal size={20} />
+            </div>
+            <a 
+                href="#hero"
+                className="text-xl md:text-2xl font-black uppercase tracking-tighter text-black hover:text-blue-700 transition-colors"
+            >
+            Piyush_Sagar<span className="animate-pulse">_</span>
+            </a>
         </div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6">
+        {/* Desktop Links - Brutalist Tabs */}
+        <div className="hidden md:flex items-center gap-2">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
               <a
                 key={link.name}
                 href={link.href}
-                className="group relative flex items-center gap-1 text-gray-800 hover:text-blue-700 transition-colors font-medium"
+                className="group relative flex items-center gap-2 px-3 py-2 text-sm font-bold uppercase text-black border-2 border-transparent hover:border-black hover:bg-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-200"
               >
-                <Icon size={18} className="text-blue-700" />
+                <Icon size={16} className="text-blue-700 group-hover:text-black" strokeWidth={2.5} />
                 {link.name}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </a>
             );
           })}
+          
+          {/* Decorative separator */}
+          <div className="h-6 w-0.5 bg-black mx-2 opacity-20"></div>
+          
+          <div className="w-3 h-3 rounded-full bg-green-500 border border-black" title="System Online"></div>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Retro Box */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu}>
+          <button 
+            onClick={toggleMenu}
+            className="p-2 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all"
+          >
             {isOpen ? (
-              <LucideX className="w-6 h-6 text-blue-700" />
+              <LucideX className="w-6 h-6 text-black" />
             ) : (
-              <LucideMenu className="w-6 h-6 text-blue-700" />
+              <LucideMenu className="w-6 h-6 text-black" />
             )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Dropdown Panel */}
       <div
-        className={`md:hidden transition-all duration-500 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`md:hidden absolute top-full left-0 w-full border-b-4 border-black bg-white transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <ul className="flex flex-col space-y-4 px-6 py-4 bg-white/80 backdrop-blur-xl shadow-lg">
+        <ul className="flex flex-col p-4 gap-2 bg-[#f4f3ef]">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
-              <li key={link.name} className="flex items-center gap-2">
-                <Icon size={18} className="text-blue-700" />
+              <li key={link.name}>
                 <a
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block text-gray-800 hover:text-blue-700 font-medium transition-colors"
+                  className="flex items-center gap-3 p-3 border-2 border-black bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-200"
                 >
-                  {link.name}
+                  <Icon size={18} className="text-black" strokeWidth={2.5} />
+                  <span className="font-bold uppercase tracking-wider text-black">
+                    {link.name}
+                  </span>
                 </a>
               </li>
             );

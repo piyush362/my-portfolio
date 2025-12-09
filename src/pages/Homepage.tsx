@@ -10,7 +10,7 @@ import Education from "../components/homepage/Education.component";
 import ProjectsSection from "../components/homepage/ProjectsSection.component";
 import ContactSection from "../components/homepage/ContactSection.component";
 import Footer from "../components/homepage/Footer.component";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 
 const Homepage: React.FC = () => {
@@ -67,20 +67,18 @@ const Homepage: React.FC = () => {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Scroll-to-Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 w-14 h-14 flex items-center justify-center bg-blue-800/80 backdrop-blur-sm text-white rounded-full shadow-2xl hover:bg-blue-700/90 hover:scale-110 transition-all duration-300 z-50"
+          className="fixed bottom-8 right-8 z-50 group"
           aria-label="Scroll to top"
         >
-          <motion.div
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center justify-center"
-          >
-            <ArrowUp className="w-6 h-6 text-white" />
-          </motion.div>
+          <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] group-hover:bg-black">
+            <ArrowUp
+              className="w-6 h-6 text-black group-hover:text-white transition-colors duration-200"
+              strokeWidth={3}
+            />
+          </div>
         </button>
       )}
     </div>
