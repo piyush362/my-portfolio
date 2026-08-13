@@ -2,11 +2,11 @@ import type { ProfileData, Project, Experience, Education, SkillCategory, AIShow
 
 export const profileData: ProfileData = {
   name: "Piyush Sagar",
-  roleTitle: "React Native Engineer & AI Mobile Developer",
-  subTitle: "Crafting hyper-fluid, liquid-smooth mobile architectures and integrating state-of-the-art on-device AI capabilities for iOS & Android.",
-  bio: "React Native Specialist with 2+ years of experience engineering high-performance cross-platform applications, IoT-connected mobile ecosystems, FinTech platforms, and next-gen AI mobile agent integrations. Creator of enterprise-grade solutions serving tens of thousands of active users across Play Store & App Store.",
-  statusText: "Open for High-Impact Mobile & AI Roles",
-  location: "Gurgaon, India (Remote Available)",
+  roleTitle: "Executive React Native Developer & AI Mobile Specialist",
+  subTitle: "Crafting hyper-fluid, liquid-smooth enterprise mobile architectures and integrating state-of-the-art on-device AI capabilities for iOS & Android.",
+  bio: "Executive React Native Developer with 2.5+ years of experience engineering mission-critical enterprise applications, FinTech platforms, IoT hardware controllers, and next-gen AI mobile agent integrations. Currently building enterprise mobile solutions at CMS Info Systems (Mahape, Navi Mumbai).",
+  statusText: "Executive React Native Developer @ CMS Info Systems",
+  location: "Mahape, Navi Mumbai, India",
   email: "PiyushSagarOfficial@gmail.com",
   phone: "+91 8318237810",
   github: "https://github.com/piyush362",
@@ -30,8 +30,8 @@ export const profileData: ProfileData = {
     },
     {
       label: "Experience",
-      value: "2+ Yrs",
-      description: "React Native, Expo, IoT & AI Mobile"
+      value: "2.5+ Yrs",
+      description: "React Native, FinTech & AI Mobile"
     }
   ]
 };
@@ -206,15 +206,33 @@ export const projectsData: Project[] = [
 
 export const experienceData: Experience[] = [
   {
+    id: "cms-info-systems",
+    company: "CMS Info Systems",
+    role: "Executive React Native Developer",
+    type: "Full-Time",
+    location: "Mahape, Navi Mumbai, India (On-site)",
+    duration: "February 2026 – Present",
+    isCurrent: true,
+    companyLogoText: "CMS",
+    summary: "Engineering enterprise-grade mission-critical React Native applications, FinTech cash logistics platforms, and secure banking automation workflows.",
+    highlights: [
+      "Architecting and building high-performance enterprise React Native applications for cash management logistics, automated teller banking, and field workforce operations.",
+      "Engineered secure biometrics authentication, encrypted payload network layers, and offline-first queue synchronization for mission-critical operations.",
+      "Optimized iOS and Android native bridge performance, reducing app cold-start latency and tuning memory consumption across low-spec field devices.",
+      "Collaborating on enterprise mobile security standards, automated CI/CD builds, and seamless Play Store & App Store deployments."
+    ],
+    techStack: ["React Native", "TypeScript", "Redux Toolkit", "RTK Query", "Native Security", "Biometrics API", "Android Studio", "Xcode"]
+  },
+  {
     id: "srchout",
     company: "Srchout Software",
     role: "React Native Engineer",
     type: "Full-Time",
     location: "Gurgaon, India (Remote)",
-    duration: "July 2024 – Present",
-    isCurrent: true,
+    duration: "July 2024 – February 2026",
+    isCurrent: false,
     companyLogoText: "SS",
-    summary: "Leading the development of high-impact cross-platform mobile applications, IoT smart hardware controllers, and enterprise deployment pipelines.",
+    summary: "Led the development of high-impact cross-platform mobile applications, IoT smart hardware controllers, and enterprise deployment pipelines.",
     highlights: [
       "Engineered and maintained 10+ production React Native applications with modular component architecture and sub-60fps frame rate benchmarks.",
       "Architected the Mettsenia Smart Property Management suite (MettsCredit & MettsPe) with IoT device monitoring, graph analytics, and offline Bluetooth Low Energy (BLE) control.",

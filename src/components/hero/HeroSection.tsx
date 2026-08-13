@@ -8,9 +8,7 @@ import {
   FileDown, 
   FolderGit2, 
   Cpu,
-  CheckCircle2,
-  Zap,
-  Globe
+  Zap
 } from 'lucide-react';
 import { profileData } from '../../data/portfolioData';
 import { soundEngine } from '../../utils/soundEffects';
@@ -117,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ openResumeModal }) => 
 
           </motion.div>
 
-          {/* Right Column: Liquid Glass Interactive Avatar / Badge Card */}
+          {/* Right Column: Liquid Glass Interactive Avatar / Profile Card */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -126,13 +124,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ openResumeModal }) => 
           >
             <div className="liquid-glass-card rounded-3xl p-6 border border-white/20 text-center space-y-6 shadow-2xl relative">
               
-              {/* Profile Avatar Frame with Glass Specular Reflect */}
-              <div className="relative mx-auto w-32 h-32 rounded-3xl p-1 bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-500 shadow-2xl overflow-hidden group">
-                <div className="w-full h-full rounded-2xl bg-slate-900 flex items-center justify-center text-white text-3xl font-extrabold tracking-wider overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-purple-600/40 opacity-80" />
-                  <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-purple-200">
-                    PS
-                  </span>
+              {/* Real Profile Image Frame with Specular Reflect */}
+              <div className="relative mx-auto w-36 h-36 sm:w-40 sm:h-40 rounded-3xl p-1 bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-500 shadow-2xl overflow-hidden group">
+                <div className="w-full h-full rounded-2xl bg-slate-900 overflow-hidden relative">
+                  <img
+                    src="/preview.png"
+                    alt="Piyush Sagar - Profile"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-40 pointer-events-none" />
                 </div>
               </div>
 
@@ -143,16 +143,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ openResumeModal }) => 
 
               <div className="pt-4 border-t border-white/10 text-left space-y-2 text-xs text-white/80 font-mono">
                 <div className="flex items-center justify-between">
-                  <span className="text-white/50">Primary Framework</span>
+                  <span className="text-white/50">Current Role</span>
+                  <span className="font-semibold text-emerald-400">CMS Info Systems</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-white/50">Primary Stack</span>
                   <span className="font-semibold text-blue-400">React Native / Expo</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-white/50">Languages</span>
-                  <span className="font-semibold text-purple-300">TS, JS, Kotlin, C++</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-white/50">AI Stack</span>
-                  <span className="font-semibold text-emerald-400">On-Device LLMs, Voice AI</span>
+                  <span className="text-white/50">AI & Native</span>
+                  <span className="font-semibold text-purple-300">On-Device AI, C++ JSI</span>
                 </div>
               </div>
 
